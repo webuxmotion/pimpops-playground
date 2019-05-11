@@ -1,0 +1,17 @@
+.header {
+  background-color: $primary-color;
+
+  &__container {
+    display: flex;
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+
+    &_nav {
+      padding-left: 20px;
+      flex-grow: 1;
+    }
+  }
+}
