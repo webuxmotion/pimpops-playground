@@ -24,10 +24,14 @@
   </ul> 
   <ul class="nav__ul">
     <li class="nav__item">
-      <a class="nav__link <?=isActive('/playgrounds');?>" href="/playgrounds">pg</a> 
+      <a class="nav__link a-px-10i <?=isActive('/playgrounds');?>" href="/playgrounds">
+        <img class="nav__link-icon" src="<?=\Core\Helper\Common::getSiteAssetsRoot()?>assets/images/pg-icon.svg">
+      </a> 
     </li>
     <li class="nav__item">
-      <a class="nav__link <?=isActive('/profile');?>" href="/profile">profile</a> 
+      <a class="nav__link a-px-10i <?=isActive('/profile');?>" href="/profile">
+        <img class="nav__link-icon" src="<?=\Core\Helper\Common::getSiteAssetsRoot()?>assets/images/profile-icon.svg">
+      </a> 
     </li>
   </ul> 
 </div>
