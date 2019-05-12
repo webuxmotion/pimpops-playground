@@ -3,3 +3,4 @@
 site/View/themes/default/app/
 .idea
 package-lock.json
+*.DS_Store
