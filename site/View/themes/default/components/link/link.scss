@@ -1,0 +1,32 @@
+.link {
+  display: inline-flex;
+
+  &_view {
+
+    &_read-docs {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid white;
+    }
+
+    &_github {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid white;
+      font-weight: 300 !important;
+      
+      .link__icon {
+        margin-left: 4px;
+      }
+
+      .link__icon-img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
