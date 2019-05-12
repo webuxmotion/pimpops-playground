@@ -29,46 +29,45 @@
         <h2 class="hero__subtitle">html5-starter</h2>
       </div>  
       <div class="hero__cell">
-      <div class="hero__group">
-        <div class="hero__group-item hero__group-item_main">
-          <div class="a-pb-35">
-            <?php
-              $data['link'] = [
-                'classes' => 'link_view_github',
-                'target' => '_blank',
-                'text' => 'GITHUB',
-                'icon' => 'blank-icon.svg',
-                'href' => 'https://github.com/pimpops'
-              ];
-              $ctx->theme->block('components/link/link', $data);
-            ?>  
+        <!-- hero__group -->
+        <div class="hero__group">
+          <div class="hero__group-item hero__group-item_main">
+            <div class="a-pb-35">
+              <?php
+                $data['link'] = [
+                  'classes' => 'link_view_github',
+                  'target' => '_blank',
+                  'text' => 'GITHUB',
+                  'icon' => 'blank-icon.svg',
+                  'href' => 'https://github.com/pimpops'
+                ];
+                $ctx->theme->block('components/link/link', $data);
+              ?>  
+            </div>
+            <div>
+              <?php
+                $data['select'] = [
+                  'classes' => 'select_view_version'
+                ];
+                $ctx->theme->block('components/select/select', $data);
+              ?>  
+            </div>
           </div>
-          <div>
-            <?php
-              $data['select'] = [
-                'classes' => 'select_view_version'
-              ];
-              $ctx->theme->block('components/select/select', $data);
-            ?>  
+          <div class="hero__group-item">
+            <div>
+              <?php
+                $data['button'] = [
+                  'tag' => 'button',
+                  'icon' => 'star-icon.svg',
+                  'classes' => 'button_view_star',
+                  'text' => '',
+                ];
+                $ctx->theme->block('components/button/button', $data);
+              ?>  
+            </div>
           </div>
         </div>
-        <div class="hero__group-item">
-          <div>
-            <?php
-              $data['button'] = [
-                'tag' => 'button',
-                'classes' => 'button_view_star',
-                'text' => '',
-                'href' => '#playmain'
-              ];
-              $ctx->theme->block('components/button/button', $data);
-            ?>  
-          </div>
-        </div>
-      </div>
-
-
-
+        <!-- END hero__group -->
       </div>  
     </div>
   </div>
