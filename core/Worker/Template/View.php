@@ -14,6 +14,11 @@ class View {
 
   public function render($template, $vars = []) {
 
+    $functions = Theme::getThemePath() . '/functions.php';
+    if (file_exists($functions)) {
+        include_once $functions;
+    }
+
     $templatePath = $this->getTemplatePath($template, ENV);
 
     if (!is_file($templatePath)) {

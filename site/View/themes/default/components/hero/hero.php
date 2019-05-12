@@ -72,7 +72,7 @@
     </div>
   </div>
   <div class="hero__bottom">
-    <svg class="hero__bottom-curve" viewBox="0 0 100 4" xmlns="http://www.w3.org/2000/svg">
+    <svg class="hero__bottom-curve" viewBox="0 0 100 3" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0 C 30 4, 70 4, 100 0" fill="transparent"/>
     </svg>
   </div>

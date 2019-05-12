@@ -55,6 +55,16 @@ class Theme {
     }
   }
 
+  public static function getThemePath() {
+
+    if (ENV !== 'Site') {
+      $themePath = ROOT_DIR . '/View/themes/default/';
+    } else {
+      $themePath = ROOT_DIR . '/' . ENV . '/View/themes/default/';
+    }
+    return $themePath;
+  }
+
   private function loadTemplateFile($nameFile, $data = []) {
 
     if (ENV !== 'Site') {
