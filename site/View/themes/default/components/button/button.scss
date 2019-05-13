@@ -2,6 +2,25 @@
 
   &_view {
 
+    &_fullwidth {
+      background-color: transparent;
+      border: none;
+      height: 40px;
+      width: 54px;
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+
+      .button__icon {
+        display: block;
+        height: 100%;
+      }
+
+      .button__icon-img {
+        height: 20px;
+      }
+    }
+
     &_star {
       background-color: transparent;
       border: 1px solid white;

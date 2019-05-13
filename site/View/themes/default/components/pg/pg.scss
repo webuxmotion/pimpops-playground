@@ -1,0 +1,51 @@
+.pg {
+  $sidebarWidth: 300px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+
+  &__frame {
+    border: 2px solid black;
+    border-radius: 6px;
+  }
+
+  &__header {
+    border-bottom: 2px solid black;
+    color: black;
+    display: flex;
+    align-items: center;
+  }
+
+  &__header-cell {
+
+    &_main {
+      flex-grow: 1;
+    }
+
+    &_right {
+      border-left: 1px solid black;
+    }
+  }
+
+  &__header-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    width: $sidebarWidth;
+    font-size: 20px; 
+  }
+
+  &__main {
+    display: flex;
+  }
+
+  &__sidebar {
+    width: $sidebarWidth;
+    border-right: 1px solid black;
+  }
+
+  &__canvas {
+    height: 400px;
+  }
+}
