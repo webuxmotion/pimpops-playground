@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="206px" height="190px" viewBox="0 0 206 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-47.000000, -54.000000)">
+            <rect id="Rectangle" x="0" y="0" width="300" height="300"></rect>
+            <rect id="Rectangle" stroke="#000000" x="84.5" y="212.5" width="31" height="31"></rect>
+            <rect id="Rectangle" stroke="#000000" x="47.5" y="54.5" width="29" height="29" rx="8"></rect>
+            <rect id="Rectangle" stroke="#000000" x="86.5" y="60.5" width="128" height="18"></rect>
+            <rect id="Rectangle-Copy" stroke="#000000" x="124.5" y="119.5" width="114" height="18"></rect>
+            <rect id="Rectangle-Copy-2" stroke="#000000" x="124.5" y="169.5" width="128" height="18"></rect>
+            <rect id="Rectangle-Copy-3" stroke="#000000" x="124.5" y="219.5" width="111" height="18"></rect>
+            <path d="M100.073568,113.052425 L118.046338,141.985774 L82.1007975,141.985774 L100.073568,113.052425 Z" id="Path" stroke="#000000" stroke-linecap="square" stroke-linejoin="round"></path>
+            <circle id="Oval" stroke="#000000" cx="100" cy="178" r="16"></circle>
+            <path d="M61.9092439,84 L61.9092439,219 C61.9092439,227.058126 65.0883079,231.087188 71.4464359,231.087188 C77.804564,231.087188 81.9890853,231.087188 84,231.087188" id="Path-2" stroke="#000000"></path>
+            <path d="M62,119 C62.1687929,126.302038 65.8927839,129.953056 73.1719728,129.953056 C80.4511616,129.953056 86.0403686,129.953056 89.9395937,129.953056" id="Path-3" stroke="#000000"></path>
+            <path d="M62,168 C62.1687929,175.302038 65.8927839,178.953056 73.1719728,178.953056 C80.4511616,178.953056 84.0605041,178.953056 84,178.953056" id="Path-3-Copy" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>

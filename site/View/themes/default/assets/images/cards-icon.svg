@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="243px" viewBox="0 0 216 243" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-39.000000, -31.000000)">
+            <rect id="Rectangle" x="0" y="0" width="300" height="300"></rect>
+            <rect id="Rectangle" stroke="#000000" x="130.5" y="150.5" width="104" height="123" rx="8"></rect>
+            <rect id="Rectangle-Copy" stroke="#000000" x="177.5" y="31.5" width="77" height="76" rx="8"></rect>
+            <rect id="Rectangle-Copy-2" stroke="#000000" x="39.5" y="58.5" width="77" height="76" rx="8"></rect>
+            <path d="M209.604264,108 L209.604264,150" id="Path" stroke="#000000"></path>
+            <path d="M73.4647674,135 L73.4647674,213.884893" id="Path-2" stroke="#000000"></path>
+            <path d="M73.4647674,213.884893 C73.3653104,227.585953 79.9277582,234.436483 93.1521108,234.436483 C106.376463,234.436483 118.659093,234.436483 130,234.436483" id="Path-3" stroke="#000000"></path>
+            <path d="M130,166.323008 L235,166.323008" id="Path-4" stroke="#000000"></path>
+            <path d="M177,45.7836854 L255,45.7836854" id="Path-5" stroke="#000000"></path>
+            <path d="M39,74.1263607 L117,74.1263607" id="Path-6" stroke="#000000"></path>
+        </g>
+    </g>
+</svg>
