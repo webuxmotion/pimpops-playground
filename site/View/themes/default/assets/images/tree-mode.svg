@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(1.000000, 1.000000)" stroke="#000000">
+            <circle id="Oval" cx="15" cy="15" r="15"></circle>
+            <rect id="Rectangle" x="11.5" y="11.5" width="14" height="2"></rect>
+            <rect id="Rectangle-Copy-3" x="6.5" y="6.5" width="16" height="2"></rect>
+            <rect id="Rectangle-Copy" x="11.5" y="16.5" width="14" height="2"></rect>
+            <rect id="Rectangle-Copy-2" x="11.5" y="21.5" width="12" height="2"></rect>
+            <path d="M8,9 L8,22.537538" id="Path"></path>
+            <path d="M8,22.537538 L11,22.537538" id="Path-2"></path>
+            <path d="M11,17.5234433 L8,17.5234433" id="Path-3"></path>
+            <path d="M11,12.6333653 L8,12.6333653" id="Path-4"></path>
+        </g>
+    </g>
+</svg>

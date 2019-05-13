@@ -34,7 +34,7 @@
       <div class="pg__main">
         <div class="pg__sidebar">
           <div class="pg__canvas">
-
+            <?php $ctx->theme->block('components/canvas/canvas'); ?>
           </div>
         </div>
         <div class="pg__content">
