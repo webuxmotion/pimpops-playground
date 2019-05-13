@@ -8,7 +8,7 @@
   <div class="file-placeholder__content">
     <div class="file-placeholder__message">
       <div class="file-placeholder__message-image-wrap">
-        <img class="file-placeholder__message-image" src="<?=assets().'/images/cards-icon.svg'?>">
+        <img class="file-placeholder__message-image" src="<?=assets().'/images/back-arrow.svg'?>">
       </div>
       <h3 class="file-placeholder__message-text">Choose a file<br> here</h3>
     </div>

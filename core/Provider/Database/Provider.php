@@ -10,10 +10,10 @@ class Provider extends AbstractProvider {
   public $workerName = 'db';
 
   public $config = [
-    'host' => 'pimpops-playground',
+    'host' => 'localhost',
     'db_name' => 'pimpops_playground',
     'username' => 'root',
-    'password' => '',
+    'password' => '1111',
     'charset' => 'utf8'
   ];
 

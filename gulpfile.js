@@ -13,7 +13,7 @@ var gulp         = require('gulp'),
 
 gulp.task('browser-sync', function() {
 		browserSync.init({
-      proxy: "pimpops-playground",		
+      proxy: "localhost",		
 			notify: false
 		});
 });
