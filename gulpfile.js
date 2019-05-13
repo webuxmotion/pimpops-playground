@@ -13,8 +13,8 @@ var gulp         = require('gulp'),
 
 gulp.task('browser-sync', function() {
 		browserSync.init({
-      proxy: "localhost",		
-			notify: false 
+      proxy: "pimpops-playground",		
+			notify: false
 		});
 });
 
@@ -42,4 +42,3 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['scss-site', 'browser-sync', 'watch']);
-

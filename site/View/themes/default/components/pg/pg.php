@@ -3,8 +3,8 @@
     <div class="pg__frame">
       <div class="pg__header">
         <div class="pg__header-cell">
-          <div class="pg__header-title">Playground</div> 
-        </div> 
+          <div class="pg__header-title">Playground</div>
+        </div>
         <div class="pg__header-cell pg__header-cell_main">
           <div class="pg__header-outer-link">
             <?php
@@ -16,9 +16,9 @@
                 'href' => 'https://github.com/pimpops'
               ];
               $ctx->theme->block('components/link/link', $data);
-            ?>  
+            ?>
           </div>
-        </div> 
+        </div>
         <div class="pg__header-cell pg__header-cell_right">
             <?php
               $data['button'] = [
@@ -28,19 +28,19 @@
                 'text' => ''
               ];
               $ctx->theme->block('components/button/button', $data);
-            ?>  
-        </div> 
-      </div> 
+            ?>
+        </div>
+      </div>
       <div class="pg__main">
         <div class="pg__sidebar">
           <div class="pg__canvas">
 
           </div>
-        </div> 
+        </div>
         <div class="pg__content">
-          content 
-        </div> 
-      </div> 
-    </div> 
+          <?php $ctx->theme->block('components/file-placeholder/file-placeholder'); ?>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

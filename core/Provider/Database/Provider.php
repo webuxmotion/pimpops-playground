@@ -6,17 +6,17 @@ use Core\Provider\AbstractProvider;
 use Core\Worker\Database\Connection;
 
 class Provider extends AbstractProvider {
-  
+
   public $workerName = 'db';
 
   public $config = [
-    'host' => 'localhost',
+    'host' => 'pimpops-playground',
     'db_name' => 'pimpops_playground',
     'username' => 'root',
-    'password' => '1111',
+    'password' => '',
     'charset' => 'utf8'
   ];
-  
+
   public function init() {
 
     $worker = new Connection($this->config);
