@@ -92,7 +92,14 @@
       tree
     </div> 
     <div data-mode="model" class="demo-canvas__screen-item">
-      model
+      <?php 
+        $data['clickFunctions'] = [
+          'index' => 'canvas.showFile(\'index\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
+          'app' => 'canvas.showFile(\'app\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
+          'styles' => 'canvas.showFile(\'styles\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
+        ];
+        $ctx->theme->block('components/canvas/canvas-img', $data); 
+      ?>
     </div> 
     <div data-mode="cards" class="demo-canvas__screen-item">
       cards

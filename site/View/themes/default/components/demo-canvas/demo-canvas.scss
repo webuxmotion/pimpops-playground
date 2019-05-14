@@ -64,6 +64,10 @@
     opacity: 0;
     pointer-events: none;
 
+    svg {
+      width: 400px;
+    }
+
     &.is-active {
       opacity: 1;
       pointer-events: visible;

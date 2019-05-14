@@ -44,6 +44,13 @@
   </div>
   <!-- END canvas__mode-buttons-list -->
   <div class="canvas__image-wrap">
-    <?php $ctx->theme->block('components/canvas/canvas-img'); ?>
+    <?php 
+      $data['clickFunctions'] = [
+        'index' => 'canvas.showFile(\'index\');',
+        'app' => 'canvas.showFile(\'app\');',
+        'styles' => 'canvas.showFile(\'styles\');',
+      ];
+      $ctx->theme->block('components/canvas/canvas-img', $data); 
+    ?>
   </div>
 </div>

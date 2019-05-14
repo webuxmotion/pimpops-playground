@@ -1,4 +1,19 @@
-<div class="pg a-px-20">
+<?php
+  $i = $pg;
+  $b['classes'] = isset($i['classes']) ? $i['classes'] : '';
+  $b['attributesStr'] = '';
+  if (isset($i['attr'])) {
+    if (count($i['attr'])) {
+      foreach ($i['attr'] as $key => $item) {
+        $b['attributesStr'] .= $key . '="' . $item . '"';
+      }
+    } 
+  }
+?>
+<div 
+  class="pg a-px-20"
+  <?=$b['attributesStr']?>
+>
   <div class="g-container">
     <div class="pg__frame">
       <div class="pg__header">

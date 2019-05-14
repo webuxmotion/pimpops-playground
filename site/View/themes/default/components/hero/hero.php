@@ -16,6 +16,7 @@
           <?php
             $data['button'] = [
               'tag' => 'a',
+              'onClick' => 'app.scrollTo(\'playground\')',
               'classes' => 'button_view_play-arch',
               'text' => 'PLAY ARCH',
               'href' => '#playmain'
