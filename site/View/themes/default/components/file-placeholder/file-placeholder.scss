@@ -10,6 +10,10 @@
   display: flex;
   flex-direction: column;
 
+  &.is-hide {
+    display: none;
+  }
+
   &__header {
     height: 36px;
     width: 100%;

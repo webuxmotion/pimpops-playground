@@ -31,14 +31,28 @@ gulp.task('scss-site', function () {
 	.pipe(browserSync.stream());
 });
 
+gulp.task('js-site', function() {
+	return gulp.src('site/View/themes/default/app.js')
+    //.pipe(sourcemaps.init())
+    .pipe(include())
+      .on('error', console.log)
+    //.pipe(sourcemaps.write())
+    .pipe(babel({
+      // presets: ['env']
+    }))
+	  .pipe(gulp.dest('site/View/themes/default/app'))
+	  .pipe(browserSync.stream());
+});
+
 // WATCH
 gulp.task('watch', function () {
 
   // SITE
 	gulp.watch('site/View/themes/**/*.scss', ['scss-site']);
+	gulp.watch('site/View/themes/**/*.js', ['js-site']);
 
 	// ON CHANGE
 	gulp.watch('**/*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['scss-site', 'browser-sync', 'watch']);
+gulp.task('default', ['scss-site', 'browser-sync', 'js-site', 'watch']);

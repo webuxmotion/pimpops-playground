@@ -55,9 +55,9 @@
   fill-opacity: 0.7 !important;
 }
 </style>
-            <polygon id="index" onclick="alert('index.html')" class="polygon" fill-opacity="0.36" fill="#F173FF" points="28.9169107 40.8526161 28.9169107 49.3451788 88.4713033 73.9555363 115.264157 48.4266942 115.264157 38.846556 53.9999998 19.336957"></polygon>
-            <polygon id="app" onclick="alert('app.js')" class="polygon" fill-opacity="0.51" fill="#FFFE6E" points="90.9875905 29.7960463 90.9875905 21.8714699 114.932162 0.435250582 139.824372 0.435250582 150.655041 3.21321234 150.655041 12.5490146 120.821316 42.7675794 114.932162 40.5982422 114.932162 37.9395139"></polygon>
-            <polygon id="styles" onclick="alert('styles.css')" class="polygon" fill-opacity="0.54" fill="#4DA9DB" points="60.7022906 20.3356717 60.7022906 13.1603086 76.8130451 0.447707809 107.61621 0.447707809 114.249683 0.447707809 90.4003212 21.6134273 90.4003212 29.4134314"></polygon>
+            <polygon tabindex="2" id="index" onclick="canvas.showFile('index')" class="polygon" fill-opacity="0.36" fill="#F173FF" points="28.9169107 40.8526161 28.9169107 49.3451788 88.4713033 73.9555363 115.264157 48.4266942 115.264157 38.846556 53.9999998 19.336957"></polygon>
+            <polygon tabindex="2" id="app" onclick="canvas.showFile('app')" class="polygon" fill-opacity="0.51" fill="#FFFE6E" points="90.9875905 29.7960463 90.9875905 21.8714699 114.932162 0.435250582 139.824372 0.435250582 150.655041 3.21321234 150.655041 12.5490146 120.821316 42.7675794 114.932162 40.5982422 114.932162 37.9395139"></polygon>
+            <polygon tabindex="2" id="styles" onclick="canvas.showFile('styles')" class="polygon" fill-opacity="0.54" fill="#4DA9DB" points="60.7022906 20.3356717 60.7022906 13.1603086 76.8130451 0.447707809 107.61621 0.447707809 114.249683 0.447707809 90.4003212 21.6134273 90.4003212 29.4134314"></polygon>
         </g>
     </g>
 </svg>

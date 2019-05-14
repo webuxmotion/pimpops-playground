@@ -1,4 +1,8 @@
-<div class="file-placeholder">
+<?php
+  $i = $filePlaceholder;
+  $b['classes'] = isset($i['classes']) ? $i['classes'] : '';
+?>
+<div class="file-placeholder <?=$b['classes']?>">
   <div class="file-placeholder__header">
     <div class="file-placeholder__tab">
       <div class="file-placeholder__tab-name"></div>

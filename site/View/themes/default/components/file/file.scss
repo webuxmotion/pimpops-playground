@@ -1,0 +1,44 @@
+.file {
+  $primary: black;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+
+  &.is-hide {
+    display: none;
+  }
+
+  &__header {
+    height: 36px;
+    width: 100%;
+    border-bottom: 1px solid $primary;
+  }
+
+  &__tab {
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-right: 1px solid $primary;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__tab-name {
+
+  }
+
+  &__tab-close {
+    margin-left: 15px;
+  }
+
+  &__content {
+    white-space: pre;
+    padding: 20px;
+  }
+}

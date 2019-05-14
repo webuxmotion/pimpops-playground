@@ -40,7 +40,18 @@
           </div>
         </div>
         <div class="pg__content">
-          <?php $ctx->theme->block('components/file-placeholder/file-placeholder'); ?>
+          <?php 
+            $data['filePlaceholder'] = [
+              //"classes" => "is-hide"
+            ];  
+            $ctx->theme->block('components/file-placeholder/file-placeholder', $data); 
+          ?>
+          <?php
+            $data['file'] = [
+              "classes" => "is-hide"
+            ];  
+            $ctx->theme->block('components/file/file', $data); 
+          ?>
         </div>
       </div>
     </div>

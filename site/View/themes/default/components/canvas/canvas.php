@@ -1,3 +1,4 @@
+<?php $ctx->theme->block('components/canvas/deps'); ?>
 <div class="canvas">
   <!-- canvas__scale-buttons-list -->
   <div class="canvas__scale-buttons-list">
