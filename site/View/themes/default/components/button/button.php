@@ -6,12 +6,21 @@
   $b['href']    = isset($i['href'])    ? $i['href']    : '>>>href';
   $b['icon']    = isset($i['icon'])    ? $i['icon']    : null;
   $b['onClick'] = isset($i['onClick']) ? $i['onClick'] : null;
+  $b['attributesStr'] = '';
+  if (isset($i['attr'])) {
+    if (count($i['attr'])) {
+      foreach ($i['attr'] as $key => $item) {
+        $b['attributesStr'] .= $key . '="' . $item . '"';
+      }
+    } 
+  }
 ?>
 
 <<?=$b['tag']?> 
   href="<?=$b['href']?>" 
   class="button <?=$b['classes']?>"
   onClick="<?=$b['onClick']?>"
+  <?=$b['attributesStr']?>
 >
   <span><?=$b['text']?></span>
   <?php if (isset($b['icon'])) : ?>

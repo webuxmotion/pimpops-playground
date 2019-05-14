@@ -8,7 +8,7 @@
     <?php
       $data['button'] = [
         'tag' => 'button',
-        'onClick' => 'modal.close();',
+        'onClick' => 'modal.close();demoCanvas.reset();',
         'icon' => 'close-black-icon.svg',
         'classes' => 'button_view_close-modal',
         'text' => '',
@@ -40,4 +40,62 @@
       ?>  
     </div>
   </div>
+  <div class="demo-canvas__mode-controls">
+    <div class="demo-canvas__mode-control-item a-pr-10">
+      <?php
+        $data['button'] = [
+          'tag' => 'button',
+          'onClick' => 'demoCanvas.show(\'tree\');',
+          'icon' => 'tree-mode.svg',
+          'classes' => 'button_view_demo-canvas',
+          'text' => '',
+          'attr' => [
+            'data-mode' => 'tree'
+          ]
+        ];
+        $ctx->theme->block('components/button/button', $data);
+      ?>  
+    </div>
+    <div class="demo-canvas__mode-control-item a-pr-10">
+      <?php
+        $data['button'] = [
+          'tag' => 'button',
+          'onClick' => 'demoCanvas.show(\'model\');',
+          'icon' => 'model-mode.svg',
+          'classes' => 'button_view_demo-canvas button_view_demo-canvas-rect',
+          'text' => '',
+          'attr' => [
+            'data-mode' => 'model'
+          ]
+        ];
+        $ctx->theme->block('components/button/button', $data);
+      ?>  
+    </div>
+    <div class="demo-canvas__mode-control-item">
+      <?php
+        $data['button'] = [
+          'tag' => 'button',
+          'onClick' => 'demoCanvas.show(\'cards\');',
+          'icon' => 'cards-mode.svg',
+          'classes' => 'button_view_demo-canvas',
+          'text' => '',
+          'attr' => [
+            'data-mode' => 'cards'
+          ]
+        ];
+        $ctx->theme->block('components/button/button', $data);
+      ?>  
+    </div>
+  </div>
+  <div class="demo-canvas__screen-items-group">
+    <div data-mode="tree" class="demo-canvas__screen-item">
+      tree
+    </div> 
+    <div data-mode="model" class="demo-canvas__screen-item">
+      model
+    </div> 
+    <div data-mode="cards" class="demo-canvas__screen-item">
+      cards
+    </div> 
+  </div>  
 </div>

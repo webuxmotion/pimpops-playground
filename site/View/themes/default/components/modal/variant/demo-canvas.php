@@ -7,5 +7,5 @@
       $ctx->theme->block('components/demo-canvas/demo-canvas', $data); 
     ?>
   </div>
-  <div class="modal__bg" onClick="modal.close()"></div>
+  <div class="modal__bg" onClick="modal.close();demoCanvas.reset();"></div>
 </div>
