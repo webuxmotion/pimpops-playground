@@ -2,6 +2,46 @@
 
   &_view {
 
+    &_demo-canvas {
+      background-color: transparent;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      transition: 0.1s;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .button__icon-img {
+        height: 30px;
+        display: block;
+      }
+    }
+
+    &_close-modal {
+      background-color: transparent;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      padding: 0;
+      cursor: pointer;
+      transition: 0.1s;
+      border: 1px solid black;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .button__icon-img {
+        height: 14px;
+        display: block;
+      }
+    }
+
     &_close-file {
       background-color: transparent;
       border: none;

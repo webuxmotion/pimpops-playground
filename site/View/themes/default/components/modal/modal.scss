@@ -1,0 +1,42 @@
+.modal {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+
+  &.is-show {
+    pointer-events: visible;
+    opacity: 1;
+    transition: 0.3s;
+
+    .modal__body {
+      transform: scale(1);
+      transition: 0.3s;
+    }
+  }
+
+  &__bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__body {
+    position: relative;
+    z-index: 100;
+    transform: scale(0.9);
+    transition: 0.1s;
+  }
+}
