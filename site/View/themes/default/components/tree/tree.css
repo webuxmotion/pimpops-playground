@@ -1,0 +1,6 @@
+.tree {
+
+  &__folder {
+    padding-left: 10px;
+  }
+}

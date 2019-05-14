@@ -89,14 +89,18 @@
   </div>
   <div class="demo-canvas__screen-items-group">
     <div data-mode="tree" class="demo-canvas__screen-item">
-      tree
+      <?php
+        $data['tree'] = [
+        ];  
+        $ctx->theme->block('components/tree/tree', $data); 
+      ?>
     </div> 
     <div data-mode="model" class="demo-canvas__screen-item">
       <?php 
         $data['clickFunctions'] = [
-          'index' => 'canvas.showFile(\'index\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
-          'app' => 'canvas.showFile(\'app\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
-          'styles' => 'canvas.showFile(\'styles\');modal.close();app.scrollTo(\'playground\');demoCanvas.reset();',
+          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
+          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
+          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
         ];
         $ctx->theme->block('components/canvas/canvas-img', $data); 
       ?>

@@ -1,6 +1,6 @@
 const canvas = {
 
-  showFile: function(fileName) {
+  showFile: function(fileName, cb) {
     const filePlaceholderEl = document.querySelector('.file-placeholder');
     const fileEl = document.querySelector('.file');
     const tabNameEl = document.querySelector('.file__tab-name');
@@ -14,7 +14,19 @@ const canvas = {
 
     filePlaceholderEl.classList.add('is-hide');
     fileEl.classList.remove('is-hide');
+    
+    if (cb) {
+      cb();
+    }
   }, 
+
+  showFromDemoCanvas: function() {
+    setTimeout(function() {
+      modal.close();
+      demoCanvas.reset();
+    }, 600);
+    app.scrollTo('playground');
+  },
 
   closeFile: function() {
     const filePlaceholderEl = document.querySelector('.file-placeholder');
