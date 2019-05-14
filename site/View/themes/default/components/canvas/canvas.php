@@ -42,4 +42,7 @@
     </div>
   </div>
   <!-- END canvas__mode-buttons-list -->
+  <div class="canvas__image-wrap">
+    <?php $ctx->theme->block('components/canvas/canvas-img'); ?>
+  </div>
 </div>
