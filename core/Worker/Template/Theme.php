@@ -60,7 +60,7 @@ class Theme {
     if (ENV !== 'Site') {
       $themePath = ROOT_DIR . '/View/themes/default/';
     } else {
-      $themePath = ROOT_DIR . '/' . ENV . '/View/themes/default/';
+      $themePath = ROOT_DIR . '/' . mb_strtolower(ENV) . '/View/themes/default/';
     }
     return $themePath;
   }
@@ -70,7 +70,7 @@ class Theme {
     if (ENV !== 'Site') {
       $templateFile = ROOT_DIR . '/View/themes/default/' . $nameFile . '.php';
     } else {
-      $templateFile = ROOT_DIR . '/' . ENV . '/View/themes/default/' . $nameFile . '.php';
+      $templateFile = ROOT_DIR . '/' . mb_strtolower(ENV) . '/View/themes/default/' . $nameFile . '.php';
     }
 
     if (is_file($templateFile)) {
