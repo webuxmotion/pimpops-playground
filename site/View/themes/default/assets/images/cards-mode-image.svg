@@ -1,0 +1,30 @@
+<svg width="389px" height="296px" viewBox="0 0 389 296" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <g id="image">
+                <rect id="Rectangle" fill="#FFD19B" x="207" y="143" width="182" height="153" rx="8"></rect>
+                <text id="index.html" font-family="Arial-BoldMT, Arial" font-size="21" font-weight="bold" fill="#000000">
+                    <tspan x="220" y="172">index.html</tspan>
+                </text>
+                <rect id="Rectangle-Copy" fill="#FFD19B" x="0" y="85" width="138" height="77" rx="8"></rect>
+                <text id="app.js" font-family="Arial-BoldMT, Arial" font-size="21" font-weight="bold" fill="#000000">
+                    <tspan x="8" y="110">app.js</tspan>
+                </text>
+                <rect id="Rectangle-Copy-2" fill="#FFD19B" x="165" y="0" width="138" height="77" rx="8"></rect>
+                <text id="styles.css" font-family="Arial-BoldMT, Arial" font-size="21" font-weight="bold" fill="#000000">
+                    <tspan x="174" y="24">styles.css</tspan>
+                </text>
+                <path d="M178.94606,77 L178.94606,180.344407 C178.892722,188.044853 182.742945,191.895076 190.496729,191.895076 C198.250513,191.895076 203.751603,191.895076 207,191.895076" id="Path" stroke="#000000"></path>
+                <path d="M112.285574,162 L112.285574,253.25442 C112.652003,262.009111 117.029348,266.386456 125.417609,266.386456 C133.80587,266.386456 161,266.386456 207,266.386456" id="Path-2" stroke="#000000"></path>
+                <polyline id="Path-3" stroke="#000000" points="200 183 206.861495 191.771243 200 200.483519"></polyline>
+                <polyline id="Path-3-Copy" stroke="#000000" points="200 258 206.861495 266.771243 200 275.483519"></polyline>
+            </g>
+            <rect id="app.js" fill-opacity="0" fill="#FFFFFF" x="0" y="85" width="138" height="77" rx="8"></rect>
+            <rect id="styles.css" fill-opacity="0" fill="#FFFFFF" x="165" y="0" width="138" height="77" rx="8"></rect>
+            <rect id="index.html" fill-opacity="0" fill="#FFFFFF" x="207" y="143" width="182" height="153" rx="8"></rect>
+        </g>
+    </g>
+</svg>

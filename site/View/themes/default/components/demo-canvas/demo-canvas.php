@@ -106,7 +106,14 @@
       ?>
     </div> 
     <div data-mode="cards" class="demo-canvas__screen-item">
-      cards
+      <?php 
+        $data['clickFunctions'] = [
+          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
+          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
+          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
+        ];
+        $ctx->theme->block('components/canvas/canvas-cards-img', $data); 
+      ?>
     </div> 
   </div>  
 </div>

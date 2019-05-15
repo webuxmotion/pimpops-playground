@@ -24,7 +24,7 @@ const canvas = {
     setTimeout(function() {
       modal.close();
       demoCanvas.reset();
-    }, 600);
+    }, 400);
     app.scrollTo('playground');
   },
 
