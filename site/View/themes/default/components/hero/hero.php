@@ -40,7 +40,7 @@
                   'target' => '_blank',
                   'text' => 'GITHUB',
                   'icon' => 'blank-icon.svg',
-                  'href' => 'https://github.com/pimpops'
+                  'href' => 'https://github.com/pimpops/html5-starter'
                 ];
                 $ctx->theme->block('components/link/link', $data);
               ?>  

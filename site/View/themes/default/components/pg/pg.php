@@ -28,7 +28,7 @@
                 'target' => '_blank',
                 'text' => 'pimpops/html5-starter',
                 'icon' => 'blank-icon-black.svg',
-                'href' => 'https://github.com/pimpops'
+                'href' => 'https://github.com/pimpops/html5-starter'
               ];
               $ctx->theme->block('components/link/link', $data);
             ?>
