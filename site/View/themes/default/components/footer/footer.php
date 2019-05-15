@@ -3,11 +3,9 @@
     <p class="footer__text">Created for the better web by 
       <?php
         $data['link'] = [
-          'classes' => 'link_view_footer-github',
-          'target' => '_blank',
-          'text' => 'webuxmotion',
-          'icon' => 'blank-icon-primary.svg',
-          'href' => 'https://github.com/webuxmotion'
+          'classes' => 'link_view_default-link',
+          'text' => 'Pimpops Team',
+          'href' => '/team'
         ];
         $ctx->theme->block('components/link/link', $data);
       ?>

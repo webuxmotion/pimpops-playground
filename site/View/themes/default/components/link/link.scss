@@ -3,20 +3,11 @@
 
   &_view {
 
-    &_footer-github {
+    &_default-link {
       color: $primary-color;
       text-decoration: none;
       border-bottom: 1px solid $primary-color;
       align-items: center;
-
-      .link__icon {
-       margin-left: 3px;
-      }
-      
-      .link__icon-img {
-        width: 18px;
-        height: 18px;
-      }
     }
 
     &_frame-github {

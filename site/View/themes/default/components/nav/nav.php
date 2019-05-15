@@ -17,6 +17,9 @@
       <a class="nav__link <?=isActive('/sponsors');?>" href="/sponsors">SPONSORS</a> 
     </li>
     <li class="nav__item">
+      <a class="nav__link <?=isActive('/team');?>" href="/team">TEAM</a> 
+    </li>
+    <li class="nav__item">
       <a class="nav__link <?=isActive('/custom-playground');?>" href="/custom-playground">
         <span class="nav__link-border">GET CUSTOM PLAYGROUND</span>
       </a> 

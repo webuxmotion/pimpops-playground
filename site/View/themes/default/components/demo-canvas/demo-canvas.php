@@ -88,7 +88,7 @@
     </div>
   </div>
   <div class="demo-canvas__screen-items-group">
-    <div data-mode="tree" class="demo-canvas__screen-item">
+    <div data-mode="tree" class="demo-canvas__screen-item demo-canvas__screen-item_type_tree">
       <?php
         $data['tree'] = [
         ];  

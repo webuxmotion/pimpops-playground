@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group">
+            <rect id="Rectangle" stroke="#000000" x="0.5" y="0.5" width="29" height="29"></rect>
+            <path d="M12.4333008,8.5 L18.1665499,8.5" id="Path" stroke="#000000"></path>
+            <path d="M4.73550029,8.5 L10.4687494,8.5" id="Path-Copy" stroke="#979797"></path>
+            <path d="M19.7023489,7 C19.1627519,8.3862737 19.1627519,9.68155173 19.7023489,10.8858341" id="Path-2" stroke="#979797"></path>
+            <path d="M21.4690998,7 C20.9295028,8.3862737 20.9295028,9.68155173 21.4690998,10.8858341" id="Path-2-Copy" stroke="#979797" transform="translate(21.266751, 8.942917) rotate(-180.000000) translate(-21.266751, -8.942917) "></path>
+            <polyline id="Path-3" stroke="#979797" points="24.8156642 7 24.8156642 7.96030121 24.1843358 8.97507967 24.8156642 9.82558987 24.8156642 10.8858341"></polyline>
+            <polyline id="Path-3-Copy" stroke="#979797" transform="translate(5.500000, 23.942917) rotate(-180.000000) translate(-5.500000, -23.942917) " points="5.81566423 22 5.81566423 22.9603012 5.18433577 23.9750797 5.81566423 24.8255899 5.81566423 25.8858341"></polyline>
+            <path d="M8,13.5 L17.893388,13.5" id="Path-4" stroke="#979797"></path>
+            <path d="M8,16.5 L17.893388,16.5" id="Path-4-Copy" stroke="#979797"></path>
+            <path d="M8,19.5 L13.5,19.5" id="Path-4-Copy-2" stroke="#000000"></path>
+            <path d="M16,19.5 L21.5,19.5" id="Path-4-Copy-3" stroke="#979797"></path>
+        </g>
+    </g>
+</svg>
