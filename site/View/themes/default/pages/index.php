@@ -2,6 +2,7 @@
 <?php $this->theme->head(); ?>
 <?php $this->theme->block('components/header/header', $data); ?>
 <?php $this->theme->block('components/hero/hero', $data); ?>
+<?php $this->theme->block('components/file-service/pimpops/html5-starter/data'); ?>
 <?php $this->theme->block('components/mega/mega', $data); ?>
 <?php 
   $data['pg'] = [
