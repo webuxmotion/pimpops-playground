@@ -1,0 +1,22 @@
+.content {
+  
+  &__body {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 600px;
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 45px;
+      line-height: 45px;
+    }
+
+    h2 {
+      font-size: 25px;
+      line-height: 35px;
+    }
+  }
+}

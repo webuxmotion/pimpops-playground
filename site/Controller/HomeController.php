@@ -5,6 +5,11 @@ namespace Site\Controller;
 class HomeController extends SiteController {
  
   public function index() {
+    header('Location: /github/pimpops/html5-starter');
+    die();
+  }
+  
+  public function pgHtml5Starter() {
     $this->view->render('pages/index');
   }
   
