@@ -55,6 +55,15 @@ class Theme {
     }
   }
 
+  public function playgroundData($name = '') {
+    if ($name !== '') {
+      $themePath = ROOT_DIR . '/site/View/themes/default/playgrounds/';
+      $filePath = $themePath . $name . '.php';
+      $playgroundData = require $filePath;
+      return $playgroundData;
+    }
+  }
+
   public static function getThemePath() {
 
     if (ENV !== 'Site') {

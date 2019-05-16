@@ -1,4 +1,3 @@
-<?php $ctx->theme->block('components/canvas/deps'); ?>
 <div class="canvas">
   <!-- canvas__scale-buttons-list -->
   <div class="canvas__scale-controls">
@@ -53,22 +52,18 @@
   <div class="canvas__screen-items-group">
     <div data-mode="tree" class="canvas__screen-item canvas__screen-item_type_tree">
       <?php
-        $data['clickFunctions'] = [
-          'index' => 'canvas.showFile(\'index\');',
-          'app' => 'canvas.showFile(\'app\');',
-          'styles' => 'canvas.showFile(\'styles\');',
-        ];
-        $ctx->theme->block('components/tree/tree', $data); 
+        $data['clickFunctions'] = $playgroundData['clickFunctions'];
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/tree', $data);
       ?>
     </div> 
     <div data-mode="model" class="canvas__screen-item">
       <?php 
-        $ctx->theme->block('components/canvas/canvas-img', $data); 
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/model', $data);
       ?>
     </div> 
     <div data-mode="cards" class="canvas__screen-item">
       <?php 
-        $ctx->theme->block('components/canvas/canvas-cards-img', $data); 
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/cards', $data);
       ?>
     </div> 
   </div>  

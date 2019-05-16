@@ -1,8 +1,14 @@
 <?php $data['ctx'] = $this; ?>
 <?php $this->theme->head(); ?>
+<!-- load playgound data -->
+<?php $this->theme->block('playgrounds/pimpops/' . $id . '/static'); ?>
+<?php 
+  $data['playgroundData'] = $this->theme->playgroundData('pimpops/' . $id . '/data'); 
+  $data['playgroundData']['id'] = $id;
+?>
+
 <?php $this->theme->block('components/header/header', $data); ?>
 <?php $this->theme->block('components/hero/hero', $data); ?>
-<?php $this->theme->block('components/file-service/pimpops/html5-starter/data'); ?>
 <?php $this->theme->block('components/mega/mega', $data); ?>
 <?php 
   $data['pg'] = [

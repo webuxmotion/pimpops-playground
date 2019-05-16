@@ -8,13 +8,19 @@ class HomeController extends SiteController {
     header('Location: /github/pimpops/html5-starter');
     die();
   }
+
+  public function showPlayground($id) {
+    $data['id'] = $id;
+    $this->view->render('pages/index', $data);
+  }
   
   public function pgHtml5Starter() {
     $this->view->render('pages/index');
   }
   
-  public function docs() {
-    $this->view->render('pages/docs');
+  public function showDocs($id) {
+    $data['id'] = $id;
+    $this->view->render('pages/docs', $data);
   }
 
   public function about() {

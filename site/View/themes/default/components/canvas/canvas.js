@@ -20,12 +20,12 @@ const canvas = {
     });
   },
 
-  showFile: function(fileName, cb) {
+  showFile: function(fileName) {
     const filePlaceholderEl = document.querySelector('.file-placeholder');
     const fileEl = document.querySelector('.file');
     const tabNameEl = document.querySelector('.file__tab-name');
     const fileContentEl = document.querySelector('.file__content');
-    const tabName = pgFiles[fileName].name;
+    const tabName = dataServiceFiles[fileName].name;
     const fileDataEl = document.querySelectorAll('[data-file=' + fileName + ']');
     const fileData = fileDataEl[0].innerHTML;
 
@@ -34,10 +34,6 @@ const canvas = {
 
     filePlaceholderEl.classList.add('is-hide');
     fileEl.classList.remove('is-hide');
-    
-    if (cb) {
-      cb();
-    }
   }, 
 
   showFromDemoCanvas: function() {

@@ -12,6 +12,7 @@
     <div class="content__body">
       <ol>
         <li><a href="/github/pimpops/html5-starter">pimpops/html5-starter</a></li>
+        <li><a href="/github/pimpops/php-di-container">pimpops/php-di-container</a></li>
       </ol>
     </div>
   </div> 

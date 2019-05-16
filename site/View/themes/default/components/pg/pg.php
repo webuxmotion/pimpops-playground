@@ -26,9 +26,9 @@
               $data['link'] = [
                 'classes' => 'link_view_frame-github',
                 'target' => '_blank',
-                'text' => 'pimpops/html5-starter',
+                'text' => $playgroundData['author'] . '/' . $playgroundData['projectName'],
                 'icon' => 'blank-icon-black.svg',
-                'href' => 'https://github.com/pimpops/html5-starter'
+                'href' => $playgroundData['githubLink']
               ];
               $ctx->theme->block('components/link/link', $data);
             ?>

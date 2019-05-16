@@ -1,5 +1,5 @@
 <script>
-pgFiles = {
+dataServiceFiles = {
   'index': {
     'name': 'index.html'
   },
@@ -11,7 +11,6 @@ pgFiles = {
   }
 };
 </script>
-
 <div style="display: none;">
   <div data-file="index">&lt;!doctype html&gt; 
 &lt;html lang=&quot;en&quot;&gt; 
@@ -33,4 +32,3 @@ pgFiles = {
   color: red;
 }</div>
 </div>
-

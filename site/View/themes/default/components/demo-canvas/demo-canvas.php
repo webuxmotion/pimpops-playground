@@ -3,7 +3,7 @@
   $b['classes'] = isset($i['classes']) ? $i['classes'] : '';
 ?>
 <div class="demo-canvas <?=$b['classes']?>">
-  <div class="demo-canvas__header">pimpops/html5-starter</div>
+  <div class="demo-canvas__header">pimpops/<?=$playgroundData['projectName']?></div>
   <div class="demo-canvas__close-button-wrap">
     <?php
       $data['button'] = [
@@ -60,22 +60,21 @@
   <div class="demo-canvas__screen-items-group">
     <div data-mode="tree" class="demo-canvas__screen-item demo-canvas__screen-item_type_tree">
       <?php
-        $data['clickFunctions'] = [
-          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
-          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
-          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
-        ];
-        $ctx->theme->block('components/tree/tree', $data); 
+        $data['clickFunctions'] = mixClickFunction(
+          $playgroundData['clickFunctions'], 
+          'canvas.showFromDemoCanvas();'
+        );
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/tree', $data);
       ?>
     </div> 
     <div data-mode="model" class="demo-canvas__screen-item">
       <?php 
-        $ctx->theme->block('components/canvas/canvas-img', $data); 
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/model', $data);
       ?>
     </div> 
     <div data-mode="cards" class="demo-canvas__screen-item">
       <?php 
-        $ctx->theme->block('components/canvas/canvas-cards-img', $data); 
+        $ctx->theme->block('playgrounds/pimpops/' . $playgroundData['id'] . '/cards', $data);
       ?>
     </div> 
   </div>  

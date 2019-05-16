@@ -1,7 +1,9 @@
 <?php
+  // Playgrounds
+  $this->router->add('show-playground', '/github/pimpops/(id:any)', 'HomeController:showPlayground');
+  $this->router->add('docs', '/docs/github/pimpops/(id:any)', 'HomeController:showDocs');
+
   $this->router->add('home', '/', 'HomeController:index');
-  $this->router->add('docs', '/github/pimpops/html5-starter/docs', 'HomeController:docs');
-  $this->router->add('pimpops/html5-starter', '/github/pimpops/html5-starter', 'HomeController:pgHtml5Starter');
   $this->router->add('about', '/about', 'HomeController:about');
   $this->router->add('pi-lab', '/pi-lab', 'HomeController:piLab');
   $this->router->add('sponsors', '/sponsors', 'HomeController:sponsors');

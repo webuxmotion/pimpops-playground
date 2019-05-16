@@ -7,7 +7,7 @@
             $data['link'] = [
               'classes' => 'link_view_read-docs',
               'text' => 'READ DOCS',
-              'href' => '/github/pimpops/html5-starter/docs'
+              'href' => '/docs/github/' . $playgroundData['author'] . '/' . $playgroundData['projectName'] 
             ];
             $ctx->theme->block('components/link/link', $data);
           ?>  
@@ -25,8 +25,8 @@
         </div>
       </div>  
       <div class="hero__cell hero__cell_main">
-        <h2 class="hero__title a-pb-20">PIMPOPS</h2>
-        <h2 class="hero__subtitle">html5-starter</h2>
+      <h2 class="hero__title a-pb-20"><?=$playgroundData['author']?></h2>
+        <h2 class="hero__subtitle"><?=$playgroundData['projectName']?></h2>
       </div>  
       <div class="hero__cell">
         <!-- hero__group -->
@@ -39,17 +39,9 @@
                   'target' => '_blank',
                   'text' => 'GITHUB',
                   'icon' => 'blank-icon.svg',
-                  'href' => 'https://github.com/pimpops/html5-starter'
+                  'href' => $playgroundData['githubLink']
                 ];
                 $ctx->theme->block('components/link/link', $data);
-              ?>  
-            </div>
-            <div>
-              <?php
-                $data['select'] = [
-                  'classes' => 'select_view_version'
-                ];
-                $ctx->theme->block('components/select/select', $data);
               ?>  
             </div>
           </div>

@@ -13,7 +13,7 @@
       <div 
         onClick="demoCanvas.show('model');modal.show()"
         class="mega__button mega__button_shape_rect" 
-        style="background-image: url('<?=assets()?>/images/html5-starter-rect.svg');"
+        style="background-image: url('<?=playgrounds().$playgroundData['modelPreview']?>');"
         tabindex="1"
       >
       </div>
