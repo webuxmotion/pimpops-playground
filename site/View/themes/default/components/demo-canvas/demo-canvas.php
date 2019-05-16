@@ -7,36 +7,26 @@
   <div class="demo-canvas__close-button-wrap">
     <?php
       $data['button'] = [
-        'tag' => 'button',
-        'onClick' => 'modal.close();demoCanvas.reset();',
-        'icon' => 'close-black-icon.svg',
-        'classes' => 'button_view_close-modal',
-        'text' => '',
+        'onClick' => 'modal.close();demoCanvas.reset();'
       ];
-      $ctx->theme->block('components/button/button', $data);
+      $ctx->theme->block('components/button/shared/canvas/close', $data);
     ?>  
   </div>
   <div class="demo-canvas__scale-controls">
     <div class="demo-canvas__scale-control-item a-pb-10">
       <?php
         $data['button'] = [
-          'tag' => 'button',
-          'icon' => 'plus-rounded.svg',
-          'classes' => 'button_view_demo-canvas',
-          'text' => '',
+          'onClick' => 'alert(\'plus\')'
         ];
-        $ctx->theme->block('components/button/button', $data);
+        $ctx->theme->block('components/button/shared/canvas/plus', $data);
       ?>  
     </div>
     <div class="demo-canvas__scale-control-item">
       <?php
         $data['button'] = [
-          'tag' => 'button',
-          'icon' => 'minus-rounded.svg',
-          'classes' => 'button_view_demo-canvas',
-          'text' => '',
+          'onClick' => 'alert(\'minus\')'
         ];
-        $ctx->theme->block('components/button/button', $data);
+        $ctx->theme->block('components/button/shared/canvas/minus', $data);
       ?>  
     </div>
   </div>
@@ -44,46 +34,26 @@
     <div class="demo-canvas__mode-control-item a-pr-10">
       <?php
         $data['button'] = [
-          'tag' => 'button',
           'onClick' => 'demoCanvas.show(\'tree\');',
-          'icon' => 'tree-mode.svg',
-          'classes' => 'button_view_demo-canvas',
-          'text' => '',
-          'attr' => [
-            'data-mode' => 'tree'
-          ]
         ];
-        $ctx->theme->block('components/button/button', $data);
+        $ctx->theme->block('components/button/shared/canvas/mode-tree', $data);
       ?>  
     </div>
     <div class="demo-canvas__mode-control-item a-pr-10">
       <?php
         $data['button'] = [
-          'tag' => 'button',
           'onClick' => 'demoCanvas.show(\'model\');',
-          'icon' => 'model-mode.svg',
-          'classes' => 'button_view_demo-canvas button_view_demo-canvas-rect',
-          'text' => '',
-          'attr' => [
-            'data-mode' => 'model'
-          ]
+          'classes' => 'button_shape_rect'
         ];
-        $ctx->theme->block('components/button/button', $data);
+        $ctx->theme->block('components/button/shared/canvas/mode-model', $data);
       ?>  
     </div>
     <div class="demo-canvas__mode-control-item">
       <?php
         $data['button'] = [
-          'tag' => 'button',
-          'onClick' => 'demoCanvas.show(\'cards\');',
-          'icon' => 'cards-mode.svg',
-          'classes' => 'button_view_demo-canvas',
-          'text' => '',
-          'attr' => [
-            'data-mode' => 'cards'
-          ]
+          'onClick' => 'demoCanvas.show(\'cards\');'
         ];
-        $ctx->theme->block('components/button/button', $data);
+        $ctx->theme->block('components/button/shared/canvas/mode-cards', $data);
       ?>  
     </div>
   </div>
