@@ -1,5 +1,25 @@
 const canvas = {
 
+  show: function(mode) {
+    const modeControl = document.querySelector('.canvas__mode-controls [data-mode=' + mode + ']');
+    const modeScreen = document.querySelector('.canvas__screen-items-group [data-mode=' + mode + ']');
+
+    this.reset();
+
+    modeControl.classList.add('is-active');
+    modeScreen.classList.add('is-active');
+  },
+
+  reset: function() {
+    const modeControls = document.querySelectorAll('.canvas__mode-controls [data-mode]');
+    const modeScreens = document.querySelectorAll('.canvas__screen-items-group [data-mode]');
+
+    modeControls.forEach(function(el, i) {
+      el.classList.remove('is-active');
+      modeScreens[i].classList.remove('is-active');
+    });
+  },
+
   showFile: function(fileName, cb) {
     const filePlaceholderEl = document.querySelector('.file-placeholder');
     const fileEl = document.querySelector('.file');

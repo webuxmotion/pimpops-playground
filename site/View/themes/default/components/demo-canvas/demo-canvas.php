@@ -34,7 +34,7 @@
     <div class="demo-canvas__mode-control-item a-pr-10">
       <?php
         $data['button'] = [
-          'onClick' => 'demoCanvas.show(\'tree\');',
+          'onClick' => 'demoCanvas.show(\'tree\');canvas.show(\'tree\');',
         ];
         $ctx->theme->block('components/button/shared/canvas/mode-tree', $data);
       ?>  
@@ -42,7 +42,7 @@
     <div class="demo-canvas__mode-control-item a-pr-10">
       <?php
         $data['button'] = [
-          'onClick' => 'demoCanvas.show(\'model\');',
+          'onClick' => 'demoCanvas.show(\'model\');canvas.show(\'model\');',
           'classes' => 'button_shape_rect'
         ];
         $ctx->theme->block('components/button/shared/canvas/mode-model', $data);
@@ -51,7 +51,7 @@
     <div class="demo-canvas__mode-control-item">
       <?php
         $data['button'] = [
-          'onClick' => 'demoCanvas.show(\'cards\');'
+          'onClick' => 'demoCanvas.show(\'cards\');canvas.show(\'cards\');'
         ];
         $ctx->theme->block('components/button/shared/canvas/mode-cards', $data);
       ?>  
@@ -60,28 +60,21 @@
   <div class="demo-canvas__screen-items-group">
     <div data-mode="tree" class="demo-canvas__screen-item demo-canvas__screen-item_type_tree">
       <?php
-        $data['tree'] = [
-        ];  
+        $data['clickFunctions'] = [
+          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
+          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
+          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
+        ];
         $ctx->theme->block('components/tree/tree', $data); 
       ?>
     </div> 
     <div data-mode="model" class="demo-canvas__screen-item">
       <?php 
-        $data['clickFunctions'] = [
-          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
-          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
-          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
-        ];
         $ctx->theme->block('components/canvas/canvas-img', $data); 
       ?>
     </div> 
     <div data-mode="cards" class="demo-canvas__screen-item">
       <?php 
-        $data['clickFunctions'] = [
-          'index'  => 'canvas.showFile(\'index\',  canvas.showFromDemoCanvas);',
-          'app'    => 'canvas.showFile(\'app\',    canvas.showFromDemoCanvas);',
-          'styles' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);'
-        ];
         $ctx->theme->block('components/canvas/canvas-cards-img', $data); 
       ?>
     </div> 

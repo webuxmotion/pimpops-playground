@@ -1,56 +1,75 @@
 <?php $ctx->theme->block('components/canvas/deps'); ?>
 <div class="canvas">
   <!-- canvas__scale-buttons-list -->
-  <div class="canvas__scale-buttons-list">
-    <div class="canvas__scale-button-wrap a-pb-10">
-      <div class="canvas__scale-button canvas__button">
-        <svg class="canvas__scale-button-image" width="29" height="29" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="#000" fill="none" fill-rule="evenodd">
-            <circle cx="14.5" cy="14.5" r="14"/>
-            <path d="M14.5 5.085v18.881M23.973 14.562H5.055"/>
-          </g>
-        </svg> 
-      </div>
+  <div class="canvas__scale-controls">
+    <div class="canvas__scale-control-item a-pb-10">
+      <?php
+        $data['button'] = [
+          'onClick' => 'alert(\'plus\')'
+        ];
+        $ctx->theme->block('components/button/shared/canvas/plus', $data);
+      ?>  
     </div>
-    <div class="canvas__scale-button-wrap">
-      <div class="canvas__scale-button canvas__button">
-        <svg class="canvas__scale-button-image" width="29" height="29" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="#000" fill="none" fill-rule="evenodd">
-            <circle cx="14.5" cy="14.5" r="14"/>
-            <path d="M23.973 14.562H5.055"/>
-          </g>
-        </svg>  
-      </div>
+    <div class="canvas__scale-control-item">
+      <?php
+        $data['button'] = [
+          'onClick' => 'alert(\'minus\')'
+        ];
+        $ctx->theme->block('components/button/shared/canvas/minus', $data);
+      ?>  
     </div>
   </div>
   <!-- END canvas__scale-buttons-list -->
   <!-- canvas__mode-buttons-list -->
-  <div class="canvas__mode-buttons-list">
+  <div class="canvas__mode-controls">
     <div class="canvas__mode-button-wrap a-pr-10">
-      <div class="canvas__mode-button canvas__button">
-        <img class="canvas__mode-button-image" src="<?=assets().'/images/tree-mode.svg'?>">
-      </div>
+      <?php
+        $data['button'] = [
+          'onClick' => 'canvas.show(\'tree\');',
+        ];
+        $ctx->theme->block('components/button/shared/canvas/mode-tree', $data);
+      ?>  
     </div>
     <div class="canvas__mode-button-wrap a-pr-10">
-      <div class="canvas__mode-button canvas__mode-button_view_rect canvas__button is-active">
-        <img class="canvas__mode-button-image" src="<?=assets().'/images/model-mode.svg'?>">
-      </div>
+      <?php
+        $data['button'] = [
+          'onClick' => 'canvas.show(\'model\');',
+          'classes' => 'button_shape_rect'
+        ];
+        $ctx->theme->block('components/button/shared/canvas/mode-model', $data);
+      ?>  
     </div>
     <div class="canvas__mode-button-wrap">
-      <div class="canvas__mode-button canvas__button">
-        <img class="canvas__mode-button-image" src="<?=assets().'/images/cards-mode.svg'?>">
-      </div>
+      <?php
+        $data['button'] = [
+          'onClick' => 'canvas.show(\'cards\');'
+        ];
+        $ctx->theme->block('components/button/shared/canvas/mode-cards', $data);
+      ?>  
     </div>
   </div>
   <!-- END canvas__mode-buttons-list -->
-  <div class="canvas__image-wrap">
-    <?php 
-      $data['clickFunctions'] = [
-        'index' => 'canvas.showFile(\'index\');',
-        'app' => 'canvas.showFile(\'app\');',
-        'styles' => 'canvas.showFile(\'styles\');',
-      ];
-      $ctx->theme->block('components/canvas/canvas-img', $data); 
-    ?>
-  </div>
+
+  <div class="canvas__screen-items-group">
+    <div data-mode="tree" class="canvas__screen-item canvas__screen-item_type_tree">
+      <?php
+        $data['clickFunctions'] = [
+          'index' => 'canvas.showFile(\'index\');',
+          'app' => 'canvas.showFile(\'app\');',
+          'styles' => 'canvas.showFile(\'styles\');',
+        ];
+        $ctx->theme->block('components/tree/tree', $data); 
+      ?>
+    </div> 
+    <div data-mode="model" class="canvas__screen-item">
+      <?php 
+        $ctx->theme->block('components/canvas/canvas-img', $data); 
+      ?>
+    </div> 
+    <div data-mode="cards" class="canvas__screen-item">
+      <?php 
+        $ctx->theme->block('components/canvas/canvas-cards-img', $data); 
+      ?>
+    </div> 
+  </div>  
 </div>

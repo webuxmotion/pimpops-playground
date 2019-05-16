@@ -12,7 +12,7 @@
   <div class="tree__folder is-active">
     <?php
       $data['treeItem'] = [
-        'onClick' => 'canvas.showFile(\'index\', canvas.showFromDemoCanvas);',
+        'onClick' => $clickFunctions['index'],
         'icon' => 'file-icon.svg',
         'classes' => 'tree-item_type_file',
         'text' => 'index.html'
@@ -21,7 +21,7 @@
     ?>  
     <?php
       $data['treeItem'] = [
-        'onClick' => 'canvas.showFile(\'styles\', canvas.showFromDemoCanvas);',
+        'onClick' => $clickFunctions['styles'],
         'icon' => 'file-icon.svg',
         'classes' => 'tree-item_type_file',
         'text' => 'styles.css'
@@ -30,7 +30,7 @@
     ?>  
     <?php
       $data['treeItem'] = [
-        'onClick' => 'canvas.showFile(\'app\', canvas.showFromDemoCanvas);',
+        'onClick' => $clickFunctions['app'],
         'icon' => 'file-icon.svg',
         'classes' => 'tree-item_type_file',
         'text' => 'app.js'

@@ -1,6 +1,9 @@
 const app = {
   
-  scrollTo: function(value) {
+  scrollTo: function(value, event) {
+    if (event) {
+      event.preventDefault();
+    }
     const elementToScroll = document.querySelector('[data-scrollto=' + value + ']');
     let offsetTop = elementToScroll.offsetTop;
     window.scrollTo({

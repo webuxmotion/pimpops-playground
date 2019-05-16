@@ -16,10 +16,9 @@
           <?php
             $data['button'] = [
               'tag' => 'a',
-              'onClick' => 'app.scrollTo(\'playground\')',
+              'onClick' => 'app.scrollTo(\'playground\', event)',
               'classes' => 'button_view_play-arch',
-              'text' => 'PLAY ARCH',
-              'href' => '#playmain'
+              'text' => 'PLAY ARCH'
             ];
             $ctx->theme->block('components/button/button', $data);
           ?>  

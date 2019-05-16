@@ -13,4 +13,8 @@
   $this->theme->block('components/pg/pg', $data); ?>
 <?php $this->theme->block('components/modal/variant/demo-canvas', $data); ?>
 <?php $this->theme->block('components/footer/footer', $data); ?>
+<script src="<?=app()?>/app.js"></script>
+<script>
+  canvas.show('model');
+</script>
 <?php $this->theme->foot(); ?>
