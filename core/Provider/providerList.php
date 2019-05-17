@@ -6,5 +6,7 @@ return [
   Core\Provider\Database\Provider::class,
   Core\Provider\Request\Provider::class,
   Core\Provider\Load\Provider::class,
-  Core\Provider\View\Provider::class
+  Core\Provider\View\Provider::class,
+  Core\Provider\Auth\Provider::class,
+  Core\Provider\ErrorHandler\Provider::class
 ];

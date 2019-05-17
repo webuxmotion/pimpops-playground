@@ -13,6 +13,7 @@ abstract class Controller {
   protected $request;
   protected $qb;
   protected $load;
+  protected $auth;
 
   public function __construct(DI $di) {
     $this->di = $di; 
@@ -20,6 +21,7 @@ abstract class Controller {
     $this->request = $this->di->get('request');
     $this->db = $this->di->get('db');
     $this->load = $this->di->get('load');
+    $this->auth = $this->di->get('auth');
     $this->qb = new QueryBuilder();
   }
 }

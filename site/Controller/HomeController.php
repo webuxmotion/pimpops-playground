@@ -14,10 +14,6 @@ class HomeController extends SiteController {
     $this->view->render('pages/index', $data);
   }
   
-  public function pgHtml5Starter() {
-    $this->view->render('pages/index');
-  }
-  
   public function showDocs($id) {
     $data['id'] = $id;
     $this->view->render('pages/docs', $data);
@@ -48,6 +44,24 @@ class HomeController extends SiteController {
   }
 
   public function profile() {
-    $this->view->render('pages/profile');
+    $data['authorized'] = false;
+
+    $hash = $this->auth->hashUser();
+
+    $sql = $this->qb
+        ->select()
+        ->from('user')
+        ->where('token', $hash)
+        ->limit(1)
+        ->sql();
+
+    $query = $this->db->query($sql, $this->qb->values);
+
+    if (!empty($query)) {
+      $data['authorized'] = true;
+      $data['userName'] = $query[0]->name;
+    }
+
+    $this->view->render('pages/profile', $data);
   }
 }
