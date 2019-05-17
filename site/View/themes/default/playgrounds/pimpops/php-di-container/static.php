@@ -69,7 +69,7 @@ try {
 </div>
 
 <div data-file="composer-json">{
-  "name": "andriipereverziev/pimpops-di",
+  "name": "pimpops/php-di-container",
   "authors": [
     {
       "name": "Andrii Pereverziev",

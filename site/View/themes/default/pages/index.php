@@ -21,6 +21,6 @@
 <?php $this->theme->block('components/footer/footer', $data); ?>
 <script src="<?=app()?>/app.js"></script>
 <script>
-  canvas.show('model');
+  canvas.show('cards');
 </script>
 <?php $this->theme->foot(); ?>
