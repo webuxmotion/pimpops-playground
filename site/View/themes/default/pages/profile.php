@@ -7,10 +7,28 @@
   ];
   $this->theme->block('components/page-title/page-title', $data); 
 ?>
-<div class="content">
+<div class="content a-px-20">
   <div class="g-container">
     <div class="content__body">
-      <h2>Place for profile card and login/registration forms</h2>
+      <?php if(!$authorized) : ?>
+
+      <?php
+        $data['button'] = [
+          'tag' => 'a',
+          'href' => 'login_facebook',
+          'icon' => 'facebook-icon.svg',
+          'classes' => 'button_view_login-facebook',
+          'text' => 'Login with facebook'
+        ];
+        $this->theme->block('components/button/button', $data);
+      ?>  
+
+      <?php else : ?>
+      <h2>Hello, <?=$userName;?></h2>
+
+      <a href="/logout">Logout</a>
+
+      <?php endif; ?>
     </div>
   </div> 
 </div>

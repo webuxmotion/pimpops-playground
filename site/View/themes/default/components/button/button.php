@@ -25,7 +25,7 @@
   <?=$b['attributesStr']?>
 >
   <?php if (isset($b['text'])) : ?>
-    <span><?=$b['text']?></span>
+    <span class="button__text"><?=$b['text']?></span>
   <?php endif; ?>
   <?php if (isset($b['icon'])) : ?>
     <span class="button__icon">

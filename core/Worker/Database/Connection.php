@@ -15,7 +15,13 @@ class Connection {
   private function connect($config) {
 
     $dsn = 'mysql:host=' . $config['host'] .';dbname=' . $config['db_name'] .';charset=' . $config['charset'];
-    $this->link = new PDO($dsn, $config['username'], $config['password']);
+    $options = [
+        PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+        PDO::ATTR_EMULATE_PREPARES   => false,
+    ];
+
+    $this->link = new PDO($dsn, $config['username'], $config['password'], $options);
 
     return $this;
   }
@@ -26,7 +32,7 @@ class Connection {
 
     return $sth->execute($values);
   }
-  
+
   public function query($sql, $values = [], $statement = PDO::FETCH_OBJ) {
 
     $sth = $this->link->prepare($sql);

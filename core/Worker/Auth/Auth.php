@@ -10,11 +10,11 @@ class Auth implements AuthInterface {
   protected $authorized = false;
   protected $hash_user;
 
-  public function authorized() {
+  public static function isAuthorized() {
     return $this->authorized;
   }
 
-  public function hashUser() {
+  public static function hashUser() {
     return Cookie::get('auth_user');
   }
 

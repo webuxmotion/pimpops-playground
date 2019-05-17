@@ -6,7 +6,9 @@
       "email": "pereverziev.andrii@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "facebook/graph-sdk": "^5.7"
+  },
   "autoload" : {
     "psr-4": {
       "Core\\": "core",

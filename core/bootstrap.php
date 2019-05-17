@@ -2,6 +2,8 @@
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+class_alias('Core\\Worker\\Auth\\Auth', 'Auth');
+
 use Core\DI;
 use Core\Starter;
 
