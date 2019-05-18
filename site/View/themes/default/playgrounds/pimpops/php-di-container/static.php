@@ -51,14 +51,14 @@ use Core\Starter;
 
 try {
   $di = new DI();
-   
+
   $providers = require __DIR__ . '/Provider/providerList.php';
-  
+
   foreach($providers as $item) {
     $provider = new $item($di);
     $provider->init();
   }
-  
+
   $starter = new Starter($di);
   $starter->run();
 } catch(\ErrorException $e) {
@@ -125,7 +125,7 @@ class Starter {
 namespace Core;
 
 class DI {
-  
+
   private $container = [];
 
   public function set($key, $value) {
@@ -158,7 +158,7 @@ namespace Core\Provider;
 use Core\DI;
 
 abstract class AbstractProvider {
-  
+
   protected $di;
 
   public function __construct(DI $di) {
@@ -178,7 +178,7 @@ use Core\Provider\AbstractProvider;
 use Core\Worker\Messenger\Messenger;
 
 class Provider extends AbstractProvider {
-  
+
   public $workerName = 'messenger';
 
   public function init() {
@@ -197,7 +197,7 @@ use Core\Provider\AbstractProvider;
 use Core\Worker\ContactBook\ContactBook;
 
 class Provider extends AbstractProvider {
-  
+
   public $workerName = 'contactBook';
 
   public function init() {
@@ -213,9 +213,9 @@ class Provider extends AbstractProvider {
 namespace Core\Worker\Messenger;
 
 class Messenger {
-  
+
   public function sendMessage($contact) {
-    return "Message has been sent to number: " . $contact; 
+    return "Message has been sent to number: " . $contact;
   }
 }
 
@@ -226,14 +226,14 @@ class Messenger {
 namespace Core\Worker\ContactBook;
 
 class ContactBook {
-  
+
   private $contactList = [
     ["name" => "Anna", "number" => "234234234"],
     ["name" => "Gleg", "number" => "234dfdf234234"]
-  ]; 
+  ];
 
   public function getList() {
-    return $this->contactList; 
+    return $this->contactList;
   }
 }
 

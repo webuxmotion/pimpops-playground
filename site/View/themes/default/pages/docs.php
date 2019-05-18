@@ -7,7 +7,7 @@
 ?>
 <?php 
   $data['pageTitle'] = [
-    "text" => "DOCS | " . $data['playgroundData']['author'] . "/" . $data['playgroundData']['projectName']
+     "text" => "DOCS | " . "<a href=\"/github/" . $data['playgroundData']['author'] . "/" . $data['playgroundData']['projectName'] . "\">" . $data['playgroundData']['author'] . "/" . $data['playgroundData']['projectName'] . "</a>"
   ];
   $this->theme->block('components/page-title/page-title', $data); 
 ?>
