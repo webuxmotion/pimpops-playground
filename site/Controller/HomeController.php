@@ -5,7 +5,7 @@ namespace Site\Controller;
 class HomeController extends SiteController {
  
   public function index() {
-    header('Location: /github/pimpops/php-di-container');
+    header('Location: /github/pimpops/js-solid-s');
     die();
   }
 
