@@ -6,8 +6,8 @@ dataServiceFiles = {
   'index-js': {
     'name': 'index.js'
   },
-  'shape-js': {
-    'name': 'shape.js'
+  'shapes-js': {
+    'name': 'shapes.js'
   },
   'area-calculator-js': {
     'name': 'areaCalculator.js'
@@ -61,7 +61,7 @@ const output = areaOputter(areas);
 console.log(output.JSON());
 output.HTML(document.getElementById('areas_sum'));
 //output.ALERT()</div>
-  <div data-file="shape-js">export const circle = (radius) => {
+  <div data-file="shapes-js">export const circle = (radius) => {
   const proto = {
     type: 'Circle'
   }
