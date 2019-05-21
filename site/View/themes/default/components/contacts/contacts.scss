@@ -1,0 +1,16 @@
+.contacts {
+
+  &__header {
+    max-width: 400px;
+    font-size: 18px;
+  }
+  
+  &__container {
+    display: flex;
+  }
+
+  &__cell {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+}

@@ -50,4 +50,8 @@ class HomeController extends SiteController {
   public function profile() {
     $this->view->render('pages/profile');
   }
+
+  public function contacts() {
+    $this->view->render('pages/contacts');
+  }
 }

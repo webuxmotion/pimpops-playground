@@ -11,4 +11,5 @@
   $this->router->add('custom-playground', '/custom-playground', 'HomeController:customPlayground');
   $this->router->add('playgrounds', '/playgrounds', 'HomeController:playgrounds');
   $this->router->add('profile', '/profile', 'HomeController:profile');
+  $this->router->add('contacts', '/contacts', 'HomeController:contacts');
 ?>

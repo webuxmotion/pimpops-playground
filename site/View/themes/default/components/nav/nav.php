@@ -32,9 +32,7 @@
   </ul> 
   <ul class="nav__ul">
     <li class="nav__item">
-      <a class="nav__link a-px-10i <?=isActive('/profile');?>" href="/profile">
-        <img class="nav__link-icon" src="<?=\Core\Helper\Common::getSiteAssetsRoot()?>assets/images/profile-icon.svg">
-      </a> 
+      <a class="nav__link <?=isActive('/contacts');?>" href="/contacts">CONTACTS</a> 
     </li>
   </ul> 
 </div>
