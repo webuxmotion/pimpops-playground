@@ -1,0 +1,31 @@
+.form {
+
+  &__sending-message,
+  &__success-message {
+    display: none;
+  }
+
+  &__success-message {
+    color: green;
+  }
+
+  &_success {
+
+    .form__success-message {
+      display: flex;
+    }
+  }
+
+  &_sending {
+
+    .form__content {
+      opacity: 0.3;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .form__sending-message {
+      display: flex;
+    }
+  }
+}

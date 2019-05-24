@@ -11,4 +11,5 @@
 <?php $this->theme->block('components/map/map'); ?>
 
 <?php $this->theme->block('components/footer/footer', $data); ?>
+<script src="<?=app()?>/app.js"></script>
 <?php $this->theme->foot(); ?>

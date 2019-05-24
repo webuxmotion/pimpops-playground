@@ -12,4 +12,6 @@
   $this->router->add('playgrounds', '/playgrounds', 'HomeController:playgrounds');
   $this->router->add('profile', '/profile', 'HomeController:profile');
   $this->router->add('contacts', '/contacts', 'HomeController:contacts');
+
+  $this->router->add('send-contact-message', '/api/send_contact_message', 'FormController:sendContactMessage', 'POST');
 ?>

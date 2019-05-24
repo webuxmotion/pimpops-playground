@@ -12,8 +12,10 @@ const app = {
     });
   }
 }
+//=require js/axios.min.js 
 //=require components/canvas/canvas.js 
 //=require components/modal/modal.js 
 //=require components/demo-canvas/demo-canvas.js 
 //=require components/tree-item/tree-item.js 
 //=require components/file-service/file-service.js 
+//=require components/form/form.js 
